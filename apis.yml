@@ -1,7 +1,15 @@
 aid: erebor-bank
 name: Erebor Bank
-description: Erebor Bank is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Erebor is a nationally chartered U.S. bank built for the next century of
+  American innovation. Its digital banking platform serves businesses with
+  FDIC-insured deposit accounts, ACH and wire transfer rails, batch payments,
+  multi-party approval workflows, account statements, and identity verification
+  delivered through a modern web application. Erebor was added to the API
+  Evangelist network as a venture-portfolio lead; as of this pass it does not
+  publish a public API, developer portal, OpenAPI specification, or other
+  machine-readable artifacts, so the profile is limited to verified identity
+  and domain-security signals.
 url: https://raw.githubusercontent.com/api-evangelist/erebor-bank/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +17,42 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://erebor.bank/apple-touch-icon.png
 tags:
 - Company
+- Banking
+- Financial Services
+- Business Banking
+- Fintech
+- Payments
+- Deposits
 apis: []
+common:
+- type: DomainSecurity
+  url: security/erebor-bank-domain-security.yml
+- type: Website
+  url: https://erebor.bank/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
